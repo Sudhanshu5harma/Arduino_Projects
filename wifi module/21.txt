@@ -1,0 +1,37 @@
+AT
+AT+GMR
+AT+CWMODE?
+AT+CWLAP
+AT+CWJAP="wifi name "," password "
+AT+CIFSR
+
+
+
+OUTPUT =
+AT
+
+OK
+ AT+GMR
+AT version:0.21.0.0
+SDK version:0.9.5
+
+OK
+AT+CWMODE?
++CWMODE:3
+
+OK
+AT+CWLAP
++CWLAP:(4,"ISIPL-Corporate",-45,"b0:c5:54:db:8e:b8",1)
++CWLAP:(3,"MDoffice",-74,"20:aa:4b:62:69:4a",2)
+
+OK
+AT+CWJAP="MDoffice","$tone123"
+
+OK
+AT+CIFSR
++CIFSR:APIP,"192.168.4.1"
++CIFSR:APMAC,"1a:fe:34:99:9f:0f"
++CIFSR:STAIP,"10.250.96.109"
++CIFSR:STAMAC,"18:fe:34:99:9f:0f"
+
+OK
